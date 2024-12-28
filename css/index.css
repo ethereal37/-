@@ -4483,7 +4483,7 @@ figure.highlight pre .javascript .function {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 999;
   pointer-events: none;
 }
 .medium-zoom-image--opened {
