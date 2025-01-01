@@ -289,12 +289,22 @@ div#archive {
   color: #ffffff;
 }
 
-/* 欢迎信息 */
-#welcome-info {
-  background: linear-gradient(45deg, #b9f4f3, #e3fbf9);
-  border-radius: 18px;
-  padding: 8px;
+:root {
+  --ichika-color: #49A6E9;
 }
-[data-theme="dark"] #welcome-info {
-  background: #212121;
+
+/* 公告&欢迎页 */
+.card-announcement {
+  line-height:30px;
+  font-size:16px;
+}
+
+.card-announcement .item-headline span{
+  margin-left:0!important;
+}
+
+.card-announcement span{
+  font-weight:bold;
+  font-size:20px!important;
+  color:var(--ichika-color);
 }
