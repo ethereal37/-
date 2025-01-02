@@ -29,7 +29,7 @@ document.addEventListener("copy", function () {
 
 
 
-//动态标题
+//恶搞标题
 var OriginTitile = document.title;
 var titleTime;
 document.addEventListener('visibilitychange', function () {
@@ -39,7 +39,7 @@ document.addEventListener('visibilitychange', function () {
     clearTimeout(titleTime);
   } else {
     //返回当前页面时标签显示内容
-    document.title = '😤哼，我就知道你会回来的！';
+    document.title = '🤭嘻嘻,我就知道你会回来的！';
     //两秒后变回正常标题
     titleTime = setTimeout(function () {
       document.title = OriginTitile;

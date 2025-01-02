@@ -166,9 +166,9 @@ if ((lunar["IMonthCn"] == "九月" && lunar["IDayCn"] == "初九")) {
 }
 
 // 切换主题提醒
-// if (y == 2022 && m == 12 && (dd >= 18 && dd <= 20)) {
-//     if (sessionStorage.getItem("isPopupWindow") != "1") {
-//         Swal.fire("网站换成冬日限定主题啦⛄");
-//         sessionStorage.setItem("isPopupWindow", "1");
-//     }
-// }
+if (y == 2025 && m == 12 && (dd >= 18 && dd <= 20)) {
+    if (sessionStorage.getItem("isPopupWindow") != "1") {
+        Swal.fire("网站换成冬日限定主题啦⛄");
+        sessionStorage.setItem("isPopupWindow", "1");
+    }
+}
