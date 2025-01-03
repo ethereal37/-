@@ -729,7 +729,7 @@ div#archive {
   font-size: 14px;
   color: #ffffff;
   text-align: center;
-  margin-top: 1px;
+  margin-top: 10px;
 }
 
 #site-runtime strong {
@@ -740,7 +740,7 @@ div#archive {
   font-size: 14px;
   color: #333;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #voyager-distance strong {
@@ -760,7 +760,7 @@ div#archive {
 }
 #workboard img {
   width: 210px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 #workboard .fas {
   color: #f39c12;
