@@ -27,7 +27,7 @@
       <link href="/2024/12/31/31%E5%8F%B7%E7%9A%84%E8%B7%9F%E6%96%B0/"/>
       <url>/2024/12/31/31%E5%8F%B7%E7%9A%84%E8%B7%9F%E6%96%B0/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>经过我昨天一个晚上的奋斗，我把我的博客主页换了一个壁纸，太好看了,来不及悼念之前的样式了，放一张图片给你们看看:<br><img src="https://tuchuang.voooe.cn/images/2024/12/31/-2024-12-29-112315.png" alt="-2024-12-29-112315.png"><br>现在的:<br><img src="https://tuchuang.voooe.cn/images/2024/12/31/-2024-12-31-131723.png" alt="-2024-12-31-131723.png"></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>经过我昨天一个晚上的奋斗，我把我的博客主页换了一个壁纸，太好看了,来不及悼念之前的样式了，放一张图片给你们看看:<br><img src="https://tuchuang.voooe.cn/images/2024/12/31/-2024-12-29-112315.png" alt="-2024-12-29-112315.png"><br>现在的:<br><img src="https://tuchuang.voooe.cn/images/2024/12/31/-2024-12-31-131723.png" alt="-2024-12-31-131723.png"></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo cl; hexo g; hexo s</span><br></pre></td></tr></table></figure>]]></content>
       
       
       
