@@ -708,7 +708,7 @@ div#archive {
 }
 #heartbeat {
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
   color: red;
   animation: heartbeat 1.5s infinite;
 }
@@ -727,9 +727,9 @@ div#archive {
 
 #site-runtime {
   font-size: 14px;
-  color: #666;
+  color: #ffffff;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 #site-runtime strong {
@@ -745,4 +745,23 @@ div#archive {
 
 #voyager-distance strong {
   color: #e74c3c;
+}
+#workboard {
+  font-family: 'Roboto', Arial, sans-serif; /* 设置字体 */
+  font-size: 16px; /* 字号 */
+  font-weight: 400; /* 正常字重 */
+  color: #ffffff; /* 文字颜色 */
+  text-align: center; /* 居中对齐 */
+  margin-top: 20px; /* 上边距 */
+}
+#workboard strong {
+  color: #e74c3c;
+  font-weight: 700;
+}
+#workboard img {
+  width: 210px;
+  margin-bottom: 5px;
+}
+#workboard .fas {
+  color: #f39c12;
 }
