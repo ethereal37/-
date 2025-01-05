@@ -11,6 +11,14 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h2><p>这个博客搭建到部署都是站长跟着B站一步步来的,所以最开始的部署平台是在Zeabur上的。最近，我决定将我的项目从 Zeabur 迁移到 Vercel。</p><h2 id="为什么选择-Zeabur？"><a href="#为什么选择-Zeabur？" class="headerlink" title="为什么选择 Zeabur？"></a>为什么选择 Zeabur？</h2><p>因为它免费啊😎,相信每个第一次制作博客的朋友肯定是不想有任何投资的。其次可以自动化部署,每次推送代码到 Git 仓库时，Zeabur 都会自动触发部署流程，确保最新的代码始终在线。</p><h2 id="为什么迁移到-Vercel？"><a href="#为什么迁移到-Vercel？" class="headerlink" title="为什么迁移到 Vercel？"></a>为什么迁移到 Vercel？</h2><p>尽管 Zeabur 有许多优点，但在实际使用过程中，我发现 Vercel 更加适合我的需求。以下是我决定迁移到 Vercel 的几个主要原因：</p><ul><li><strong>更好的性能</strong>：Vercel 在全球范围内拥有多个数据中心，能够提供更快的页面加载速度和更低的延迟。</li><li><strong>更强的集成</strong>：Vercel 与 Next.js 深度集成，提供了许多专门为 Next.js 优化的功能，如静态生成、增量静态再生和边缘函数。</li><li><strong>更好的开发者体验</strong>：Vercel 提供了强大的命令行工具和直观的用户界面，使得部署和管理项目变得更加简单和高效。</li><li><strong>一直免费使用</strong>：是的,虽然用Zeabur也是免费但是只能给你免费24小时使用,一旦超过24小时就会把你的项目关闭,这个时候站长每天都要重新部署项目部署时页面也会崩掉,而Vercel就不会这样</li></ul><h2 id="迁移过程"><a href="#迁移过程" class="headerlink" title="迁移过程"></a>迁移过程</h2><p>将项目从 Zeabur 迁移到 Vercel 并不是一件轻松的事情。记得第一次迁移竟然成功了,当时就想可以有两个域名喽,可是后来再vscode中不知道敲了哪个命令,项目部署失败了,把报错信息扔给Chatgpt分析一下问题,是我Vercel设置那栏没搞好,我重新试了一下,又报错,就一直在寝室里改,甚至把不是我能接触的代码也修改了,结果整个项目的文件被删除了,还好在git仓上有我最近传上去的文件,不过在那之后,我就想要不还是Zeabur吧,虽然每天重新部署是挺麻烦的,但是可以自动化部署,几天后,无意翻到chatgpt的对话记录,它最后一句是这样的<img src="https://tuchuang.voooe.cn/images/2025/01/05/-2025-01-05-195500.png"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>隐约觉得我每次推到git仓上时都没用这个命令,我重新看了一下butterfly官方文档发现这是用于静态网站,那一切就说得通了,再次试了,成功了😁<img src="https://tuchuang.voooe.cn/images/2025/01/05/-2025-01-05-200231.png"></p><h2 id="迁移后的体验"><a href="#迁移后的体验" class="headerlink" title="迁移后的体验"></a>迁移后的体验</h2><ul><li>打开网站速度确实很快</li><li>长期免费使用<br><br>OK,就这样吧</li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 关于部署 </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -29,6 +37,14 @@
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>说实话，我不知道有这个游戏，在2019年发布的，2019年…🤔这个时候新冠疫情刚爆发，我所生活在的地方都停课，停工，上了网课都不知道在听什么，我觉得效率远没有在教室里高，但是回到这，跟《死亡搁浅》这款游戏有什么联系吗？<img src="https://tuchuang.voooe.cn/images/2025/01/03/20241128212750_1.jpg"><img src="https://tuchuang.voooe.cn/images/2025/01/03/20241128212757_1.jpg"><img src="https://tuchuang.voooe.cn/images/2025/01/03/20241128212806_1.jpg"><img src="https://tuchuang.voooe.cn/images/2025/01/03/20241128212813_1.jpg"><img src="https://tuchuang.voooe.cn/images/2025/01/03/20241128212820_1.jpg"><img src="https://tuchuang.voooe.cn/images/2025/01/03/20241128212828_1.jpg"><br>在这些怪异景象中，怎么没有人类的身影，而游戏的设定正是在一个被称为“死亡搁浅”事件后的世界，这一事件导致了生与死的界限变得模糊，超自然现象频繁发生。玩家扮演的主角山姆·布里吉斯（Sam Bridges）是一名快递员，他的任务是穿越废土，将物资送到分散的幸存者手中，并重新连接分裂的社会。这也确实符合疫情爆发的时候，大家都在家里不能出去游玩，社交所以才能跟死亡搁浅产生共鸣，不仅仅是一款动作冒险游戏，它更像是一部互动电影，讲述了一个关于连接和孤独的深刻故事。游戏的画面精美，音乐动人，配合扣人心弦的剧情，让玩家沉浸其中。虽然游戏节奏较慢，但正是这种独特的节奏让玩家能够细细品味每一个细节。我那时在上网课，没玩，但是现在有了时间，有了电脑，为了弥补2019年的遗憾我下载了，e父免费送的太感动，但我错过了e父送的《古墓丽影》三部曲，寒假我要爽玩哈哈哈。</p><h2 id="死亡搁浅，启动！"><a href="#死亡搁浅，启动！" class="headerlink" title="死亡搁浅，启动！"></a>死亡搁浅，启动！</h2><p>小岛工作室的logo<img src="https://tuchuang.voooe.cn/images/2025/01/03/20241128212647_1.jpg">logo很帅，有个性，不愧是《合金装备》的制作人小岛秀夫<br>卢登斯出场了<img src="https://tuchuang.voooe.cn/images/2025/01/03/20241128212636_1.jpg" alt="卢登斯"><br><img src="https://tuchuang.voooe.cn/images/2025/01/03/20241128212643_1.jpg">圣诞节的小彩蛋,那人头戴圣诞帽<img src="https://tuchuang.voooe.cn/images/2025/01/03/20241225110729_1.jpg">有摩托车了，也到达风电站了，但不知道怎么才能充电，我还得再看一下攻略<img src="https://tuchuang.voooe.cn/images/2025/01/03/20241225111754_1.jpg">逗BB👶开心<img src="https://tuchuang.voooe.cn/images/2025/01/03/20241225112100_1.jpg"></p>]]></content>
       
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+          <category> 死亡搁浅 </category>
+          
+      </categories>
       
       
         <tags>
@@ -49,6 +65,14 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在2024年的最后一个月，我在steam库中下载了《底特律.变人》这款游戏<br>说实话之前是在B站上看别人玩过，当时觉得这款游戏的画质、剧情和人物塑造都是顶尖的，真的，但是我遇上了考试周没办法了只能暂时放一下了。不过我现在才把三个主角(卡拉、康纳、马库斯)的初次剧情通过，给你们看看：</p><h2 id="游戏介绍"><a href="#游戏介绍" class="headerlink" title="游戏介绍"></a>游戏介绍</h2><p>《底特律：变人》（Detroit: Become Human）是由 Quantic Dream 开发并发行的一款交互式电影冒险游戏。游戏设定在未来的底特律市，讲述了三个仿生人（卡拉、康纳、马库斯）的故事，他们在探索自我意识和人类情感的过程中，面临着各种道德和伦理的抉择。</p><h3 id="主要角色"><a href="#主要角色" class="headerlink" title="主要角色"></a>主要角色</h3><ul><li><strong>卡拉（Kara）</strong>：一个逃离主人家暴的仿生人，她试图保护一个小女孩并寻找自由。</li><li><strong>康纳（Connor）</strong>：一个专门负责追捕变异仿生人的侦探，他在执行任务的过程中逐渐产生了自我意识。</li><li><strong>马库斯（Markus）</strong>：一个从仆人变成革命领袖的仿生人，他带领其他仿生人争取自由和平等。</li></ul><h2 id="游戏截图"><a href="#游戏截图" class="headerlink" title="游戏截图"></a>游戏截图</h2><p>看板娘~久仰大名，好看捏！<img src="https://tuchuang.voooe.cn/images/2025/01/01/20241223204207_1.jpg" alt="看板娘"><br>卡拉在陶德家时,<img src="https://tuchuang.voooe.cn/images/2025/01/01/20241223213451_1.jpg" alt="照镜子的卡拉">这个时候的脸还是好好的，但在跟陶德打架时不小心按错一个键脸被打了，呜呜呜。<br><br>康纳酱帅得嘞，救下小女孩，冷酷无情的仿生人。<img src="https://tuchuang.voooe.cn/images/2025/01/01/20241223204532_1.jpg" alt="康纳"><br><img src="https://tuchuang.voooe.cn/images/2025/01/01/20241223204803_1.jpg"><br><img src="https://tuchuang.voooe.cn/images/2025/01/01/20241223210319_1.jpg" alt="成功救下小女孩"><br>马库斯玩到了，当时太沉浸了忘了截图<br>哦耶<img src="https://tuchuang.voooe.cn/images/2025/01/01/159c811a2714c9bcc085c790885d65b2.gif"></p>]]></content>
       
       
+      <categories>
+          
+          <category> 游戏 </category>
+          
+          <category> 底特律：变人 </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -67,6 +91,14 @@
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ 测试，测试,我刚配的图床,放一张照片</span><br></pre></td></tr></table></figure><p><img src="https://tuchuang.voooe.cn/images/2024/12/31/_20241231141824.jpg" alt="_20241231141824.jpg"></p>]]></content>
       
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 更新 </category>
+          
+      </categories>
       
       
         <tags>
@@ -87,6 +119,14 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>经过我昨天一个晚上的奋斗，我把我的博客主页换了一个壁纸，太好看了,来不及悼念之前的样式了，放一张图片给你们看看:<br><img src="https://tuchuang.voooe.cn/images/2024/12/31/-2024-12-29-112315.png" alt="-2024-12-29-112315.png"><br>现在的:<br><img src="https://tuchuang.voooe.cn/images/2024/12/31/-2024-12-31-131723.png" alt="-2024-12-31-131723.png"></p>]]></content>
       
       
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 更新 </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -106,6 +146,14 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>哈哈哈哈哈哈哈哈哈，那个评论系统终于搞好了，我是看B站上的一个up主一步一步做好的，<br>虽然有官方文档但我看不懂写得太粗略了，也可能是我的问题，我用的评论系统是Twikoo,<br>没有买服务器，穷鬼一个，部署啥的都是外网站，网络很卡可能评论都加载不出来，最好是<br>挂梯子，我的手机是这样的。就这样吧！后续我还会再修改的。</p>]]></content>
       
       
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 更新 </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -118,12 +166,20 @@
     
     
     <entry>
-      <title>小更新</title>
+      <title>鼠标魔改、动态背景</title>
       <link href="/2024/12/28/%E5%B0%8F%E6%9B%B4%E6%96%B0/"/>
       <url>/2024/12/28/%E5%B0%8F%E6%9B%B4%E6%96%B0/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="好消息！"><a href="#好消息！" class="headerlink" title="好消息！"></a>好消息！</h2><ul><li>这次是动态背景加了特效在里面</li><li>鼠标给它魔改了一下，颜色也可以自己设置的</li></ul><h2 id="But-坏消息"><a href="#But-坏消息" class="headerlink" title="But 坏消息!"></a>But 坏消息!</h2><ul><li>今天一下午都在搞那个评论系统，注册了各种数据库，好麻烦一做就做到了天黑了</li><li>我什么时候才能进阶成为大佬</li></ul>]]></content>
       
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 更新 </category>
+          
+      </categories>
       
       
         <tags>
@@ -144,6 +200,14 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="哈哈哈哈哈哈哈哈哈哈哈"><a href="#哈哈哈哈哈哈哈哈哈哈哈" class="headerlink" title="哈哈哈哈哈哈哈哈哈哈哈"></a>哈哈哈哈哈哈哈哈哈哈哈</h2><p>这次成功更新一个在线聊天小窗口<br>你们可以来测试噢</p>]]></content>
       
       
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 更新 </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -156,12 +220,20 @@
     
     
     <entry>
-      <title>一次小小的更新</title>
+      <title>繁简切换键</title>
       <link href="/2024/12/27/%E4%B8%80%E6%AC%A1%E5%B0%8F%E5%B0%8F%E7%9A%84%E6%9B%B4%E6%96%B0/"/>
       <url>/2024/12/27/%E4%B8%80%E6%AC%A1%E5%B0%8F%E5%B0%8F%E7%9A%84%E6%9B%B4%E6%96%B0/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="这次我更新了一个繁简文字切换的功能。"><a href="#这次我更新了一个繁简文字切换的功能。" class="headerlink" title="这次我更新了一个繁简文字切换的功能。"></a>这次我更新了一个繁简文字切换的功能。</h2><ul><li>在右下角那边</li><li>点击设置图标<br>每次上传都是网络不稳定给我报错，好烦啊</li></ul><h3 id="今天努力搞出一个能留言的功能，希望我能成功吧！"><a href="#今天努力搞出一个能留言的功能，希望我能成功吧！" class="headerlink" title="今天努力搞出一个能留言的功能，希望我能成功吧！"></a>今天努力搞出一个能留言的功能，希望我能成功吧！</h3>]]></content>
       
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 更新 </category>
+          
+      </categories>
       
       
         <tags>
@@ -181,6 +253,14 @@
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="你好！"><a href="#你好！" class="headerlink" title="你好！"></a>你好！</h1><h2 id="接下来是站长的碎碎念-……"><a href="#接下来是站长的碎碎念-……" class="headerlink" title="接下来是站长的碎碎念 ($……**@)"></a>接下来是站长的碎碎念 ($……**@)</h2><h1 id="我是这里的老大兼站长-不要问为什么"><a href="#我是这里的老大兼站长-不要问为什么" class="headerlink" title="我是这里的老大兼站长 不要问为什么"></a>我是这里的老大兼站长 <del>不要问为什么</del></h1><ul><li>这是我人生中第一个博客</li><li>我现在正在慢慢开发一些功能…</li></ul><h3 id="请敬请期待吧！"><a href="#请敬请期待吧！" class="headerlink" title="请敬请期待吧！"></a>请敬请期待吧！</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ 测试一下代码框能不能显示。我设置的是苹果mac风格的样式</span><br></pre></td></tr></table></figure>]]></content>
       
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+          <category> 说说 </category>
+          
+      </categories>
       
       
         <tags>
