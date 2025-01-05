@@ -4,7 +4,26 @@
   
     
     <entry>
-      <title>《死亡搁浅》</title>
+      <title>为什么要从Zeabur换到Vercel?</title>
+      <link href="/2025/01/03/%E5%85%B3%E4%BA%8E%E6%88%91%E7%94%A8Zeabur%E9%83%A8%E7%BD%B2%E5%88%B0Vercel%E9%83%A8%E7%BD%B2/"/>
+      <url>/2025/01/03/%E5%85%B3%E4%BA%8E%E6%88%91%E7%94%A8Zeabur%E9%83%A8%E7%BD%B2%E5%88%B0Vercel%E9%83%A8%E7%BD%B2/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h2><p>这个博客搭建到部署都是站长跟着B站一步步来的,所以最开始的部署平台是在Zeabur上的。最近，我决定将我的项目从 Zeabur 迁移到 Vercel。</p><h2 id="为什么选择-Zeabur？"><a href="#为什么选择-Zeabur？" class="headerlink" title="为什么选择 Zeabur？"></a>为什么选择 Zeabur？</h2><p>因为它免费啊😎,相信每个第一次制作博客的朋友肯定是不想有任何投资的。其次可以自动化部署,每次推送代码到 Git 仓库时，Zeabur 都会自动触发部署流程，确保最新的代码始终在线。</p><h2 id="为什么迁移到-Vercel？"><a href="#为什么迁移到-Vercel？" class="headerlink" title="为什么迁移到 Vercel？"></a>为什么迁移到 Vercel？</h2><p>尽管 Zeabur 有许多优点，但在实际使用过程中，我发现 Vercel 更加适合我的需求。以下是我决定迁移到 Vercel 的几个主要原因：</p><ul><li><strong>更好的性能</strong>：Vercel 在全球范围内拥有多个数据中心，能够提供更快的页面加载速度和更低的延迟。</li><li><strong>更强的集成</strong>：Vercel 与 Next.js 深度集成，提供了许多专门为 Next.js 优化的功能，如静态生成、增量静态再生和边缘函数。</li><li><strong>更好的开发者体验</strong>：Vercel 提供了强大的命令行工具和直观的用户界面，使得部署和管理项目变得更加简单和高效。</li><li><strong>一直免费使用</strong>：是的,虽然用Zeabur也是免费但是只能给你免费24小时使用,一旦超过24小时就会把你的项目关闭,这个时候站长每天都要重新部署项目部署时页面也会崩掉,而Vercel就不会这样</li></ul><h2 id="迁移过程"><a href="#迁移过程" class="headerlink" title="迁移过程"></a>迁移过程</h2><p>将项目从 Zeabur 迁移到 Vercel 并不是一件轻松的事情。记得第一次迁移竟然成功了,当时就想可以有两个域名喽,可是后来再vscode中不知道敲了哪个命令,项目部署失败了,把报错信息扔给Chatgpt分析一下问题,是我Vercel设置那栏没搞好,我重新试了一下,又报错,就一直在寝室里改,甚至把不是我能接触的代码也修改了,结果整个项目的文件被删除了,还好在git仓上有我最近传上去的文件,不过在那之后,我就想要不还是Zeabur吧,虽然每天重新部署是挺麻烦的,但是可以自动化部署,几天后,无意翻到chatgpt的对话记录,它最后一句是这样的<img src="https://tuchuang.voooe.cn/images/2025/01/05/-2025-01-05-195500.png">隐约觉得我每次推到git仓上时都没用这个命令,我重新看了一下butterfly官方文档发现这是用于静态网站,那一切就说得通了,再次试了,成功了😁<img src="https://tuchuang.voooe.cn/images/2025/01/05/-2025-01-05-200231.png"></p><h2 id="迁移后的体验"><a href="#迁移后的体验" class="headerlink" title="迁移后的体验"></a>迁移后的体验</h2><ul><li>打开网站速度确实很快</li><li>长期免费使用<br><br>OK,就这样吧</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>死亡搁浅</title>
       <link href="/2025/01/03/%E6%AD%BB%E4%BA%A1%E6%90%81%E6%B5%85/"/>
       <url>/2025/01/03/%E6%AD%BB%E4%BA%A1%E6%90%81%E6%B5%85/</url>
       
@@ -23,7 +42,7 @@
     
     
     <entry>
-      <title>交互式游戏- 《底特律：变人》</title>
+      <title>底特律：变人</title>
       <link href="/2025/01/03/%E4%BA%A4%E4%BA%92%E5%BC%8F%E6%B8%B8%E6%88%8F/"/>
       <url>/2025/01/03/%E4%BA%A4%E4%BA%92%E5%BC%8F%E6%B8%B8%E6%88%8F/</url>
       
