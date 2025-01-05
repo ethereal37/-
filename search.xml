@@ -42,11 +42,11 @@
     
     
     <entry>
-      <title>亲爱的舍友</title>
-      <link href="/2024/12/31/%E4%BA%B2%E7%88%B1%E7%9A%84%E8%88%8D%E5%8F%8B/"/>
-      <url>/2024/12/31/%E4%BA%B2%E7%88%B1%E7%9A%84%E8%88%8D%E5%8F%8B/</url>
+      <title>图床测试</title>
+      <link href="/2024/12/31/%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/"/>
+      <url>/2024/12/31/%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://tuchuang.voooe.cn/images/2024/12/31/_20241231141824.jpg" alt="_20241231141824.jpg"></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ 测试，测试,我刚配的图床,放一张照片</span><br></pre></td></tr></table></figure><p><img src="https://tuchuang.voooe.cn/images/2024/12/31/_20241231141824.jpg" alt="_20241231141824.jpg"></p>]]></content>
       
       
       
