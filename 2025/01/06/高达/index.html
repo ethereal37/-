@@ -216,7 +216,7 @@ setInterval(updateBoard, 1000);</script></div></footer></div><div id="rightside"
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://twikoo-lake-tau.vercel.app/',
+      envId: 'https://twikoo.ethereal.ac.cn/',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -230,7 +230,7 @@ setInterval(updateBoard, 1000);</script></div></footer></div><div id="rightside"
   const init = (el = document, path = location.pathname) => {
     twikoo.init({
       el: el.querySelector('#twikoo-wrap'),
-      envId: 'https://twikoo-lake-tau.vercel.app/',
+      envId: 'https://twikoo.ethereal.ac.cn/',
       region: '',
       onCommentLoaded: () => {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
