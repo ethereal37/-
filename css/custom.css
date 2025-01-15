@@ -307,7 +307,7 @@ div#archive {
   position: fixed;
   /* 指定位置 */
   left: 10px;
-  bottom: 80px;
+  bottom: 210px;
   z-index: 1919810;
 }
 [data-theme="light"] #fps {
