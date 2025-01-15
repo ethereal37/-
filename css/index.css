@@ -4069,6 +4069,18 @@ figure.highlight pre .javascript .function {
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
+.fontawesomeIcon,
+#article-container a.headerlink:after,
+#post .post-outdate-notice:before,
+.note:not(.no-icon)::before,
+.search-dialog hr:before {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 #article-container {
   word-wrap: break-word;
   overflow-wrap: break-word;
