@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>笔记本小插曲</title>
+      <link href="/2025/02/02/4/"/>
+      <url>/2025/02/02/4/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>今天打开电脑没有开机，我想着我也没关机啊一直都是插着电玩的，按哪个键也没反应。心里咯噔一下，按照我以往的经验，我就强制关机———强制开机<br>OK成功了，(其实到这里还没发现异常)。等我打开steam大屏模式时出现端倪，我的开机动画有一丝丝的掉帧，我以为是网络的问题，又发现之前如此丝滑的切换动画变成一卡一卡的，打开wellpaper换上我的明日香动态壁纸竟然是如此的卡顿，虽然里面的音乐还是正常的。我打开设置面板，在”系统”——“屏幕”处发现了”屏幕分辨率”那栏都变灰了，点都点不了<br><a href="https://tuchuang.voooe.cn/image/oRFBc"><img src="https://tuchuang.voooe.cn/images/2025/02/02/-2025-02-02-215444.md.png" alt="-2025-02-02-215444.md.png"></a><br><br>因此去互联网上学习了一番。我找到了以下符合我电脑的原因：</p><h3 id="1-可能是内存容量不够了？"><a href="#1-可能是内存容量不够了？" class="headerlink" title="1. 可能是内存容量不够了？"></a>1. 可能是内存容量不够了？</h3><p>容量不够了，那就删掉点呗，把一些不需要的文件删掉，为此我含泪把我的游戏《底特律·化身为人》删了。ps:还好都通关了 感觉删的差不多了，就以wellpaper壁纸来测试一下，嗯？还是不行？我****</p><h3 id="2-更新或重新下载显卡驱动？"><a href="#2-更新或重新下载显卡驱动？" class="headerlink" title="2. 更新或重新下载显卡驱动？"></a>2. 更新或重新下载显卡驱动？</h3><p>行，那我就更新，我的笔记本上有英伟达显卡，正好有新驱动还没更新。于是等待了漫长的更新时间，<a href="https://tuchuang.voooe.cn/image/oRpU6"><img src="https://tuchuang.voooe.cn/images/2025/02/02/-2025-02-02-230705.md.png" alt="-2025-02-02-230705.md.png"></a>待到更新好再测试一下，还是不行啊啊啊啊啊啊！阿米诺斯！</p><h3 id="3-设备管理器更新驱动"><a href="#3-设备管理器更新驱动" class="headerlink" title="3. 设备管理器更新驱动"></a>3. 设备管理器更新驱动</h3><p>把最后的希望放在设备管理器上，出乎意料，<img src="https://tuchuang.voooe.cn/images/2025/02/02/-2025-02-02-222040.png" alt="-2025-02-02-222040.png">这OrayiddDriver的适配器是啥，绝对是来捣乱的！还把我的amd适配器给禁了，赶紧调整。果然，随着”叮”的一声回到了原来的样子，重新打开steam大屏模式下，丝滑得稳如老狗😎<br>接下来就是嘿嘿<a href="https://tuchuang.voooe.cn/image/oRuMe"><img src="https://tuchuang.voooe.cn/images/2025/02/02/-2025-02-02-231725.md.png" alt="-2025-02-02-231725.md.png"></a><br>伟大的露娜sama</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>新年快乐！</title>
       <link href="/2025/01/28/3/"/>
       <url>/2025/01/28/3/</url>
@@ -33,7 +58,7 @@
       <link href="/2025/01/18/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
       <url>/2025/01/18/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info simple"><p>注意本Twikoo是在Vercel上部署，如果不是在Vercel上部署请另寻别处</p></div><p>一开始配置邮箱通知时，配置的服务商是QQ的，理由很简单，因为大家都是QQ邮箱来联系，谁知是我忽略了自己的Twikoo是在Vercel上部署的，而Vercel是国外网站的(被ban了)，所以这才想起来看Twikoo的文档和各种资料，最终邮箱通知成功配置好。我觉得也要分享一下以免大家踩坑而放弃。</p><ol><li><p>毕竟是在Vercel上部署的，当然也有它的一个原因。在Vercel中找到你部署Twikoo的项目并点击，找到Settings点击，找到Deployment Protection，看到第一个Vercel Authentication，把它设置为Disabled,并Save。<br><img src="https://s2.loli.net/2025/01/18/CXb9ghFjV6PoWsw.png" alt="屏幕截图 2025-01-18 140353.png"></p></li><li><p>这之后就没Vercel的事了，接下来就是配置邮箱。官方文档里说过 </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用Vercel部署的云函数，请配置国外的邮件服务商</span><br></pre></td></tr></table></figure><p>那就说明QQ、163…只要是国内的邮件就行不通，所以把目标集中在国外邮件服务商，我照着作者的文档的步骤来的，所以用<a href="https://www.zoho.com/">zoho邮件服务商</a>打开网站，先注册，好了之后就进入邮箱配置界面，这里前提是你要有自己的域名，填好之后就接着下一步，然后会有一个设置用户，名字随自己喜好，<img src="https://s2.loli.net/2025/01/18/pva934zg5NKALX8.png" alt=" 2025-01-18 132723.png">这就表示我的企业邮箱是<a href="mailto:&#101;&#116;&#x68;&#x65;&#x72;&#64;&#x65;&#x74;&#104;&#101;&#x72;&#101;&#97;&#x6c;&#46;&#x61;&#x63;&#46;&#x63;&#x6e;">&#101;&#116;&#x68;&#x65;&#x72;&#64;&#x65;&#x74;&#104;&#101;&#x72;&#101;&#97;&#x6c;&#46;&#x61;&#x63;&#46;&#x63;&#x6e;</a></p></li><li><p>然后就会有一个DNS解析，有两条记录，可以看我的(我买的是腾讯云的域名，解析自然也是腾讯云的)。<br><img src="https://s2.loli.net/2025/01/18/49ALreYPGWUTpRi.png" alt="屏幕截图 2025-01-18 145636.png"><br>腾讯云这边解析好后就到zoho这边看看成不成功。好了就到网站Twikoo这边配置</p></li><li><p>来到Twikoo评论那，点击”设置”,输入自己的密码，点击”配置管理”，点击”邮件通知”。接下来可以看我这里怎么填的<br><img src="https://s2.loli.net/2025/01/18/wJXdKmDcgo6T4Ca.png" alt="屏幕截图 2025-01-18 150655.png">SMTP_PASS这里你自己在zoho设置的密码。配置好就保存一下。</p></li><li><p>然后再邮件通知测试填你自己其他的邮箱，点击”发送测试邮箱”按钮如有出现以下字段就说明成功。<br><img src="https://s2.loli.net/2025/01/18/BSArF8cybolazTH.png" alt="屏幕截图 2025-01-18 151251.png"></p></li><li><p>最后再来检验一下：<br><img src="https://s2.loli.net/2025/01/18/3piY5D4BVq6AOJs.jpg" alt="_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&amp;MsgID=95760908948591797&amp;skey=@crypt_34b44638_a8645afd98eab4ac3a812ff5ae1d71b0&amp;mmweb_appid=wx_webfilehelper.jpg"></p></li></ol>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info simple"><p>注意本Twikoo是在Vercel上部署，如果不是在Vercel上部署请另寻别处</p></div><p>一开始配置邮箱通知时，配置的服务商是QQ的，理由很简单，因为大家都是QQ邮箱来联系，谁知是我忽略了自己的Twikoo是在Vercel上部署的，而Vercel是国外网站的(被ban了)，所以这才想起来看Twikoo的文档和各种资料，最终邮箱通知成功配置好。我觉得也要分享一下以免大家踩坑而放弃。</p><ol><li><p>毕竟是在Vercel上部署的，当然也有它的一个原因。在Vercel中找到你部署Twikoo的项目并点击，找到Settings点击，找到Deployment Protection，看到第一个Vercel Authentication，把它设置为Disabled,并Save。<br><img src="https://s2.loli.net/2025/01/18/CXb9ghFjV6PoWsw.png" alt="屏幕截图 2025-01-18 140353.png"></p></li><li><p>这之后就没Vercel的事了，接下来就是配置邮箱。官方文档里说过 </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用Vercel部署的云函数，请配置国外的邮件服务商</span><br></pre></td></tr></table></figure><p>那就说明QQ、163…只要是国内的邮件就行不通，所以把目标集中在国外邮件服务商，我照着作者的文档的步骤来的，所以用<a href="https://www.zoho.com/">zoho邮件服务商</a>打开网站，先注册，好了之后就进入邮箱配置界面，这里前提是你要有自己的域名，填好之后就接着下一步，然后会有一个设置用户，名字随自己喜好，<img src="https://s2.loli.net/2025/01/18/pva934zg5NKALX8.png" alt=" 2025-01-18 132723.png">这就表示我的企业邮箱是<a href="mailto:&#101;&#116;&#104;&#101;&#x72;&#x40;&#101;&#116;&#104;&#101;&#x72;&#101;&#97;&#x6c;&#x2e;&#x61;&#x63;&#x2e;&#99;&#x6e;">&#101;&#116;&#104;&#101;&#x72;&#x40;&#101;&#116;&#104;&#101;&#x72;&#101;&#97;&#x6c;&#x2e;&#x61;&#x63;&#x2e;&#99;&#x6e;</a></p></li><li><p>然后就会有一个DNS解析，有两条记录，可以看我的(我买的是腾讯云的域名，解析自然也是腾讯云的)。<br><img src="https://s2.loli.net/2025/01/18/49ALreYPGWUTpRi.png" alt="屏幕截图 2025-01-18 145636.png"><br>腾讯云这边解析好后就到zoho这边看看成不成功。好了就到网站Twikoo这边配置</p></li><li><p>来到Twikoo评论那，点击”设置”,输入自己的密码，点击”配置管理”，点击”邮件通知”。接下来可以看我这里怎么填的<br><img src="https://s2.loli.net/2025/01/18/wJXdKmDcgo6T4Ca.png" alt="屏幕截图 2025-01-18 150655.png">SMTP_PASS这里你自己在zoho设置的密码。配置好就保存一下。</p></li><li><p>然后再邮件通知测试填你自己其他的邮箱，点击”发送测试邮箱”按钮如有出现以下字段就说明成功。<br><img src="https://s2.loli.net/2025/01/18/BSArF8cybolazTH.png" alt="屏幕截图 2025-01-18 151251.png"></p></li><li><p>最后再来检验一下：<br><img src="https://s2.loli.net/2025/01/18/3piY5D4BVq6AOJs.jpg" alt="_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&amp;MsgID=95760908948591797&amp;skey=@crypt_34b44638_a8645afd98eab4ac3a812ff5ae1d71b0&amp;mmweb_appid=wx_webfilehelper.jpg"></p></li></ol>]]></content>
       
       
       <categories>
