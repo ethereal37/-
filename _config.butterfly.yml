@@ -11,22 +11,25 @@
 
 nav:
   # Navigation bar logo image
-  logo: /img/logo.png
+  logo: https://tuchuang.voooe.cn/images/2025/02/11/logo.jpg
   display_title: true
   # Whether to fix navigation bar
   fixed: false
 
 menu:
   主页: / || fas fa-home
-  时间轴: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
-  留言板: /comments/ || fas fa-comment
-  清单||fas fa-list:
-    音乐: /music/ || fas fa-music
-    电影: /movies/ || fas fa-video
-  友链: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
+  列表|| fas fa-list:
+      时间轴: /archives/ || fas fa-archive
+      标签: /tags/ || fas fa-tags
+      分类: /categories/ || fas fa-folder-open
+  中二病: /bangumis/ || fas fa-tv
+  留言板: /comments/ || fas fa-comments
+  关于|| fas fa-heart:
+      本人: /about/ || fas fa-user
+      唠叨: /shuoshuo/ || fas fa-comment
+      友链: /link/ || fas fa-link
+      我的装备: /equipments/ || fas fa-laptop
+
 
 # --------------------------------------
 # Code Blocks Settings
@@ -37,7 +40,7 @@ code_blocks:
   theme: darker
   macStyle: true
   # Code block height limit (unit: px)
-  height_limit: false
+  height_limit: 200
   word_wrap: true
 
   # Toolbar
@@ -53,36 +56,37 @@ code_blocks:
 social:
   fab fa-github: https://github.com/ethereal37 || Github || '#24292e'
   fas fa-envelope: mailto:3268000457@qq.com || Email || '#4a7dbe'
+  fab fa-qq: tencent://message/?uin=3268000457 || QQ || '#eb1923'
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: https://tuchuang.voooe.cn/images/2025/02/11/logo.jpg
 
 avatar:
-  img: /img/5656.png
+  img: /img/jojo.jpeg
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: /img/77.png
+default_top_img: transparent
 
 # The banner image of index page
-index_img: /img/77.png
+index_img: 
 
 # The banner image of archive page
-archive_img: /img/77.png
+archive_img: 
 
 # Note: tag page, not tags page
-tag_img: /img/77.png
+tag_img: false
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
 #  - tag name: xxxx
-tag_per_img: /img/77.png
+tag_per_img: 
 
 # Note: category page, not categories page
 category_img: 
@@ -93,20 +97,20 @@ category_img:
 category_per_img: 
 
 # The background image of footer
-footer_img: true
+footer_img: transparent
 
 # Website Background
 # Can set it to color or image url
-background: url(https://source.fomal.cc/img/dm1.webp)
+background: /img/芙宁娜.png
 
 cover:
   # Disable the cover or not
   index_enable: true
   aside_enable: true
   archives_enable: true
+  suffix: 1
   # When cover is not set, the default cover is displayed
   default_cover:
-    # - xxx.jpg
 
 # Replace Broken Images
 error_img:
@@ -131,7 +135,7 @@ post_meta:
     label: true
   post:
     # Choose: left / center
-    position: left
+    position: center
     # Choose: created / updated / both
     date_type: both
     # Choose: date / relative
@@ -153,12 +157,12 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
-  typed_option:
+  typed_option: 
   # Source - Call the third-party service API (Chinese only)
   # It will show the source first, then show the content of sub
   # Choose: false/1/2/3
@@ -166,9 +170,13 @@ subtitle:
   # 1 - hitokoto.cn
   # 2 - yijuzhan.com
   # 3 - jinrishici.com
-  source: 1
+  source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - "Welcome to EtherealのBlog!😎🍔"
+    - "一个不会敲代码的程序员"
+    - "选择你所喜欢的，爱你所选择的。"
+    - "美丽的东西存在于世上，这一点本身就值得感谢了。"
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -205,7 +213,7 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -215,10 +223,10 @@ reward:
   enable: true
   text: 打赏支持
   QR_code:
-    - img: /img/支付1.jpg
+    - img: /img/二维码1.jpg
       link: https://ys.mihoyo.com/
       text: 微信
-    - img: /img/支付2.jpg
+    - img: /img/二维码2.jpg
       link: https://sr.mihoyo.com/?nav=home
       text: 支付宝
 
@@ -242,7 +250,7 @@ related_post:
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: false
+post_pagination: 2
 
 # Displays outdated notice for a post
 noticeOutdate:
@@ -262,10 +270,10 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2023
-  custom_text: I wish you to become your own sun, no need to rely on who's light.<p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p>
+    since: 2024
+  custom_text: <a href="https://icp.gov.moe/?keyword=20250624" target="_blank">萌ICP备20250624号</a>
   # Copyright of theme and framework
-  copyright: true
+  copyright: false
 
 # --------------------------------------
 # Aside Settings
@@ -285,15 +293,15 @@ aside:
     category: true
   card_author:
     enable: true
-    description: 是这里的老大,站长,芙门,喜欢玩Steam,未来的社畜。
+    description: 今天做点什么好呢
     button:
       enable: true
-      icon: fab fa-github
-      text: Follow Me
+      icon: 
+      text: 🛰️前往小家...
       link: https://github.com/ethereal37
   card_announcement:
     enable: true
-    content: 这是我的博客,此刻正在慢慢修改,站长的一天也是很忙的  #用来设置头像下面的字
+    content:  <center>主域名：<br><a href="https://ethereal.ac.cn"><b><font color="#5ea6e5">https://ethereal.ac.cn</font></b></a><br><a href="https://www.ethereal.ac.cn"><b><font color="#5ea6e5">www.ethereal.ac.cn</font></b></a><br>最近搭建了github+vervel的随机图api,反正都是自己喜欢的图片(白天加载会很卡，晚上就好了)。  #用来设置头像下面的字
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -309,7 +317,7 @@ aside:
     storage: 10
     avatar: true
   card_categories:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 8
     # Choose: none / true / false
@@ -326,7 +334,7 @@ aside:
     order: 1
     sort_order:
   card_archives:
-    enable: true
+    enable: false
     # Type: monthly / yearly
     type: monthly
     # Eg: YYYY年MM月
@@ -352,7 +360,7 @@ aside:
     # Time difference between publish date and now
     # Formal: Month/Day/Year Time or Year/Month/Day Time
     # Leave it empty if you don't enable this feature
-    runtime_date:
+    runtime_date: 12/26/2024 00:00:00
 
 # --------------------------------------
 # Bottom right button
@@ -393,7 +401,7 @@ darkmode:
   end:
 
 # Show scroll percent in scroll-to-top button
-rightside_scroll_percent: false
+rightside_scroll_percent: true
 
 # Don't modify the following settings unless you know how they work
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -471,7 +479,7 @@ math:
 search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use:
+  use: local_search
   placeholder:
 
   # Algolia Search
@@ -514,7 +522,7 @@ share:
   # AddToAny
   # https://www.addtoany.com/
   addtoany:
-    item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
+    item: facebook,twitter,sina_weibo,facebook_messenger,email,copy_link
 
 # --------------------------------------
 # Comments System
@@ -613,7 +621,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo-lake-tau.vercel.app/
+  envId: https://twikoo.ethereal.ac.cn/
   region:
   # Use Twikoo visitor count as the page view count
   visitor: true
@@ -729,8 +737,8 @@ ad:
 # --------------------------------------
 
 site_verification:
-  # - name: google-site-verification
-  #   content: xxxxxx
+    - name: google-site-verification
+      content: ywWvJgotKHxVKNyEl8jRcyjMyUvXWxqkYFOMwSrntAU
   # - name: baidu-site-verification
   #   content: xxxxxxx
 
@@ -773,7 +781,7 @@ text_align_justify: false
 
 # Add a mask to the header and footer
 mask:
-  header: true
+  header: false
   footer: true
 
 # Loading Animation
@@ -853,7 +861,7 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: true
+  enable: false
   # Color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   color: '0,0,255'
   # The opacity of line (0~1)
@@ -866,7 +874,7 @@ canvas_nest:
 
 # Mouse click effects: fireworks
 fireworks:
-  enable: true
+  enable: false
   zIndex: 999
   mobile: false
 
@@ -877,11 +885,20 @@ click_heart:
 
 # Mouse click effects: words
 clickShowText:
-  enable: false
+  enable: false  
   text:
-    # - I
-    # - LOVE
-    # - YOU
+    - 富强
+    - 民主
+    - 文明
+    - 和谐
+    - 自由
+    - 平等
+    - 公正
+    - 法治
+    - 爱国
+    - 敬业
+    - 诚信
+    - 友善
   fontSize: 15px
   random: false
   mobile: false
@@ -894,7 +911,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: fancybox
 
 # --------------------------------------
 # Tag Plugins settings
@@ -965,21 +982,21 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar - Toast Notification
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
   # The background color of Toast Notification in light mode and dark mode
   bg_light: '#49b1f5'
@@ -1036,9 +1053,31 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
+    - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
+    - <link rel="stylesheet" href="/css/cat.css">
+    - <link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <span id="fps"></span> # 帧率检测
     - <link rel="stylesheet" href="/css/custom.css">
   bottom:
-    - <script defer src="/js/cursor.js"></script>
+  # 樱花飘落效果
+   # - <script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script>
+    - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
+    - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
+    - <script async src="/js/fps.js"></script> # 帧率检测
+    - <div class="aplayer no-destroy" data-id="13093634761" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-lrctype="1" data-preload="none" data-autoplay="true" muted></div>
+    - <script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script> # 节日弹窗依赖
+    - <script defer src="/js/lunar.js"></script> # 农历计算
+    - <script defer src="/js/day.js"></script> # 节日弹窗
+    - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
+    - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
+    - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
+    - <script defer data-pjax src="/js/cat.js"></script>
+    - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
+    - <script defer src="/js/cursor.js"></script> # 鼠标特效
+    - <script async src="/js/title.js"></script> # 恶搞标题
+    # - <canvas id="snow"></canvas> # 雪花画布
+    # - <script async src="/js/snow.js"></script> # 雪花特效
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
@@ -1048,7 +1087,7 @@ CDN:
   # Note: Dev version can only use 'local' for internal scripts
   # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
   internal_provider: local
-  third_party_provider: jsdelivr
+  third_party_provider: cdnjs
 
   # Add version number to url, true or false
   version: false
@@ -1060,8 +1099,8 @@ CDN:
 # Artitalk
 # see https://artitalk.js.org/
 artitalk:
-  appId: aIEm3hdWMqyRxTq0jqp7jxJi-MdYXbMMI
-  appKey: R32bGQC6yTz9kHgn1ZriTgpT
+  appId: 
+  appKey: 
 option:
   lang: zh
 

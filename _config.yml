@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Ethereal的精神世界
+title: Ethereal
 subtitle: ''
 description: ''
 keywords:
-author: Zhang
+author: Ethereal
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://ethereal.ac.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -104,24 +104,59 @@ deploy:
   type: git
   repo: https://github.com/ethereal37/-
   branch: main
+##------------------
+# 本地搜索系统
+##------------------
+search:
+  path: search.xml
+  field: post
+  content: true
 
-# envelope_comment
-# see https://akilar.top/posts/e2d3c450/
-envelope_comment:
-  enable: true #控制开关
-  custom_pic:      
-    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
-    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
-    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
-    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
-  message: #信笺正文，多行文本，写法如下
-    - 有什么想问的？
-    - 有什么想说的？
-    - 有什么想吐槽的？
-    - 哪怕是有什么想吃的，都可以告诉我哦~
-  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
-  height: #1050px，信封划出的高度
-  path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
-  front_matter: #【可选】comments页面的 front_matter 配置
-    title: 留言板
-    comments: true
+magnet:
+  enable: true
+  priority: 2
+  enable_page: /
+  type: categories
+  devide: 3
+  display:
+    - name: 技术
+      display_name: Etherealの技术分享
+      icon: 📚
+    - name: 游戏
+      display_name: Etherealの游戏体验
+      icon: 🎮
+    - name: 生活
+      display_name: Etherealの生活趣闻
+      icon: 🐱‍👓
+    - name: 编程
+      display_name: Etherealの编程学习
+      icon: 💻
+  color_setting:
+    text_color: black
+    text_hover_color: white
+    background_color: "#f2f2f2"
+    background_hover_color: "#b30070"
+  layout:
+    type: id
+    name: recent-posts
+    index: 0
+  temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
+  plus_style: ""
+
+  aplayer:
+  meting: true
+  asset_inject: false
+
+bangumi: # 追番设置
+  enable: true
+  source: bili
+  path:
+  vmid: 358586282
+  title: '最后的精神故土'
+  quote: '生命不息，追番不止！'
+  show: 1
+  loading:
+  metaColor:
+  color:
+  webp:
+  progress:
