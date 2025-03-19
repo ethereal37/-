@@ -4684,6 +4684,29 @@ figure.highlight pre .javascript .function {
     display: none;
   }
 }
+[data-theme="dark"] #web_bg {
+  background: https://tuchuang.voooe.cn/images/2025/03/03/38.jpg;
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  #web_bg {
+    background: /img/芙宁娜.png !important;
+    background-attachment: local !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  [data-theme="dark"] #web_bg {
+    background: https://tuchuang.voooe.cn/images/2025/03/03/38.jpg !important;
+    background-attachment: local !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+}
 .container .btn-center {
   margin: 0 0 20px;
   text-align: center;
