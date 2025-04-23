@@ -4,7 +4,7 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
             window.requestAnimationFrame ||
             window.webkitRequestAnimationFrame ||
             function (callback) {
-                window.setTimeout(callback, 1000 / 60);
+                window.setTimeout(callback, 1000 / 120);
             }
         );
     }();
