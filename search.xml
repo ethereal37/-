@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>用AI生成图像</title>
+      <link href="//2025/05/07/"/>
+      <url>//2025/05/07/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>说来话长，之前在小黑盒上看到的<a href="https://api.xiaoheihe.cn/v3/bbs/app/api/web/share?link_id=ffe27039fe9d">文章</a>,觉得很有意思，正好自己有chat-gpt，不妨试试呢？<br><strong>为了方便，我把那老哥的模板直接搬到这了</strong></p><blockquote><p>模板：请你画一张极其平凡无奇的iPhone自拍照，没有明确的主体或构图感：就像是随手一拍的快照。照片略带运动模糊，阳光或店内灯光不均导致轻微曝光过度。角度尴尬、构图混乱，整体呈现出一种刻意的平庸感：就像是从口袋里拿手机时不小心拍到的一张自拍。主角是__，晚上，旁边是上海外滩还有东方明珠。注意应是《__》中的__动漫人物形象，背景为真实世界图片  </p></blockquote><p>试了一下，怎么说呢，大抵是第一次这样用，能生成但给我生成了真人图像。说明还是要训练的<br><img src="https://tuchuang.voooe.cn/images/2025/05/08/-2025-05-07-223234.png" alt="但是真人的"><br>然后给它提示了一下是动漫人物，让它重新生成了一下，反正比第一次有进步，有猫耳的阿梓喵可爱捏！<br><img src="https://tuchuang.voooe.cn/images/2025/05/08/-2025-05-07-224750.png" alt="阿梓喵可爱呢！"><br>可恶啊，一天只能让我免费使用五次。(这是前几天的事了)<br>到了今天晚上，再次打开chat-gpt在左侧有了更新，我*，是Sora，好奇的点进去，输入用户生日和昵称，网页真是高级。<br><img src="https://tuchuang.voooe.cn/images/2025/05/08/-2025-05-07-224216.png" alt="高级"><br>可我发现，我用不了视频生成，可能我还不是内测人员吧🥲，但是那里面的图像生成是能用的，于是又想起了那次的阿梓喵的图像，想要试了。<br>再次输入那个模板，给出的效果明显要好。<br><img src="https://tuchuang.voooe.cn/images/2025/05/08/-2025-05-08-125256.png" alt="-2025-05-08-125256.png"><br>另外我还生成了唯的，还有她们几个的合照。不错，都好看。<br><img src="https://tuchuang.voooe.cn/images/2025/05/08/4-2.png" alt="4-2.png"><br><img src="https://tuchuang.voooe.cn/images/2025/05/08/4.png" alt="4.png"><br><img src="https://tuchuang.voooe.cn/images/2025/05/08/W2.png" alt="W2.png"><br><img src="https://tuchuang.voooe.cn/images/2025/05/08/W1.png" alt="W1.png"><br><img src="https://tuchuang.voooe.cn/images/2025/05/08/AZM2.png" alt="AZM2.png"><br><img src="https://tuchuang.voooe.cn/images/2025/05/08/AZM1.png" alt="AZM1.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> AI图像生成 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> AI图像生成 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>酷态科CP13 10000mAh 30W快充充电宝使用感想</title>
       <link href="//2025/04/29/"/>
       <url>//2025/04/29/</url>
@@ -404,7 +433,7 @@
       <link href="//2025/01/18/"/>
       <url>//2025/01/18/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info simple"><p>注意本Twikoo是在Vercel上部署，如果不是在Vercel上部署请另寻别处</p></div><p>一开始配置邮箱通知时，配置的服务商是QQ的，理由很简单，因为大家都是QQ邮箱来联系，谁知是我忽略了自己的Twikoo是在Vercel上部署的，而Vercel是国外网站的(被ban了)，所以这才想起来看Twikoo的文档和各种资料，最终邮箱通知成功配置好。我觉得也要分享一下以免大家踩坑而放弃。</p><ol><li><p>毕竟是在Vercel上部署的，当然也有它的一个原因。在Vercel中找到你部署Twikoo的项目并点击，找到Settings点击，找到Deployment Protection，看到第一个Vercel Authentication，把它设置为Disabled,并Save。<br><img src="https://s2.loli.net/2025/01/18/CXb9ghFjV6PoWsw.png" alt="屏幕截图 2025-01-18 140353.png"></p></li><li><p>这之后就没Vercel的事了，接下来就是配置邮箱。官方文档里说过 </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用Vercel部署的云函数，请配置国外的邮件服务商</span><br></pre></td></tr></table></figure><p>那就说明QQ、163…只要是国内的邮件就行不通，所以把目标集中在国外邮件服务商，我照着作者的文档的步骤来的，所以用<a href="https://www.zoho.com/">zoho邮件服务商</a>打开网站，先注册，好了之后就进入邮箱配置界面，这里前提是你要有自己的域名，填好之后就接着下一步，然后会有一个设置用户，名字随自己喜好，<img src="https://s2.loli.net/2025/01/18/pva934zg5NKALX8.png" alt=" 2025-01-18 132723.png">这就表示我的企业邮箱是<a href="mailto:&#101;&#x74;&#x68;&#x65;&#x72;&#x40;&#x65;&#116;&#104;&#x65;&#x72;&#101;&#x61;&#108;&#x2e;&#97;&#x63;&#x2e;&#x63;&#110;">&#101;&#x74;&#x68;&#x65;&#x72;&#x40;&#x65;&#116;&#104;&#x65;&#x72;&#101;&#x61;&#108;&#x2e;&#97;&#x63;&#x2e;&#x63;&#110;</a></p></li><li><p>然后就会有一个DNS解析，有两条记录，可以看我的(我买的是腾讯云的域名，解析自然也是腾讯云的)。<br><img src="https://s2.loli.net/2025/01/18/49ALreYPGWUTpRi.png" alt="屏幕截图 2025-01-18 145636.png"><br>腾讯云这边解析好后就到zoho这边看看成不成功。好了就到网站Twikoo这边配置</p></li><li><p>来到Twikoo评论那，点击”设置”,输入自己的密码，点击”配置管理”，点击”邮件通知”。接下来可以看我这里怎么填的<br><img src="https://s2.loli.net/2025/01/18/wJXdKmDcgo6T4Ca.png" alt="屏幕截图 2025-01-18 150655.png">SMTP_PASS这里你自己在zoho设置的密码。配置好就保存一下。</p></li><li><p>然后再邮件通知测试填你自己其他的邮箱，点击”发送测试邮箱”按钮如有出现以下字段就说明成功。<br><img src="https://s2.loli.net/2025/01/18/BSArF8cybolazTH.png" alt="屏幕截图 2025-01-18 151251.png"></p></li><li><p>最后再来检验一下：<br><img src="https://s2.loli.net/2025/01/18/3piY5D4BVq6AOJs.jpg" alt="_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&amp;MsgID=95760908948591797&amp;skey=@crypt_34b44638_a8645afd98eab4ac3a812ff5ae1d71b0&amp;mmweb_appid=wx_webfilehelper.jpg"></p></li></ol>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info simple"><p>注意本Twikoo是在Vercel上部署，如果不是在Vercel上部署请另寻别处</p></div><p>一开始配置邮箱通知时，配置的服务商是QQ的，理由很简单，因为大家都是QQ邮箱来联系，谁知是我忽略了自己的Twikoo是在Vercel上部署的，而Vercel是国外网站的(被ban了)，所以这才想起来看Twikoo的文档和各种资料，最终邮箱通知成功配置好。我觉得也要分享一下以免大家踩坑而放弃。</p><ol><li><p>毕竟是在Vercel上部署的，当然也有它的一个原因。在Vercel中找到你部署Twikoo的项目并点击，找到Settings点击，找到Deployment Protection，看到第一个Vercel Authentication，把它设置为Disabled,并Save。<br><img src="https://s2.loli.net/2025/01/18/CXb9ghFjV6PoWsw.png" alt="屏幕截图 2025-01-18 140353.png"></p></li><li><p>这之后就没Vercel的事了，接下来就是配置邮箱。官方文档里说过 </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用Vercel部署的云函数，请配置国外的邮件服务商</span><br></pre></td></tr></table></figure><p>那就说明QQ、163…只要是国内的邮件就行不通，所以把目标集中在国外邮件服务商，我照着作者的文档的步骤来的，所以用<a href="https://www.zoho.com/">zoho邮件服务商</a>打开网站，先注册，好了之后就进入邮箱配置界面，这里前提是你要有自己的域名，填好之后就接着下一步，然后会有一个设置用户，名字随自己喜好，<img src="https://s2.loli.net/2025/01/18/pva934zg5NKALX8.png" alt=" 2025-01-18 132723.png">这就表示我的企业邮箱是<a href="mailto:&#101;&#x74;&#104;&#101;&#x72;&#64;&#101;&#116;&#104;&#101;&#114;&#x65;&#97;&#x6c;&#x2e;&#x61;&#99;&#x2e;&#99;&#110;">&#101;&#x74;&#104;&#101;&#x72;&#64;&#101;&#116;&#104;&#101;&#114;&#x65;&#97;&#x6c;&#x2e;&#x61;&#99;&#x2e;&#99;&#110;</a></p></li><li><p>然后就会有一个DNS解析，有两条记录，可以看我的(我买的是腾讯云的域名，解析自然也是腾讯云的)。<br><img src="https://s2.loli.net/2025/01/18/49ALreYPGWUTpRi.png" alt="屏幕截图 2025-01-18 145636.png"><br>腾讯云这边解析好后就到zoho这边看看成不成功。好了就到网站Twikoo这边配置</p></li><li><p>来到Twikoo评论那，点击”设置”,输入自己的密码，点击”配置管理”，点击”邮件通知”。接下来可以看我这里怎么填的<br><img src="https://s2.loli.net/2025/01/18/wJXdKmDcgo6T4Ca.png" alt="屏幕截图 2025-01-18 150655.png">SMTP_PASS这里你自己在zoho设置的密码。配置好就保存一下。</p></li><li><p>然后再邮件通知测试填你自己其他的邮箱，点击”发送测试邮箱”按钮如有出现以下字段就说明成功。<br><img src="https://s2.loli.net/2025/01/18/BSArF8cybolazTH.png" alt="屏幕截图 2025-01-18 151251.png"></p></li><li><p>最后再来检验一下：<br><img src="https://s2.loli.net/2025/01/18/3piY5D4BVq6AOJs.jpg" alt="_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&amp;MsgID=95760908948591797&amp;skey=@crypt_34b44638_a8645afd98eab4ac3a812ff5ae1d71b0&amp;mmweb_appid=wx_webfilehelper.jpg"></p></li></ol>]]></content>
       
       
       <categories>
