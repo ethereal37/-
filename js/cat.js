@@ -34,8 +34,8 @@ if (document.body.clientWidth > 992) {
                 borderRadius: 5 + 'px',
                 right: 100 + 'px',
                 // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图,TMD这个图片要放到图床上，不然会显示不出来
-                nekoImg: "https://tuchuang.voooe.cn/images/2024/12/31/c33eef2d154ebc0e24343cb24692ded4.png",
-                hoverMsg: "春天了捏~",
+                nekoImg: "https://ethereal-imgs.zjy236725.workers.dev/img/%E8%8A%99%E5%AE%81%E5%A8%9C(%E6%97%A0%E8%83%8C%E6%99%AF).png",
+                hoverMsg: "冬天了捏~",
                 color: "#6f42c1",
                 during: 500,
                 blog_body: "body",
