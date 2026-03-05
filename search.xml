@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>用PicGo+七牛云搭建个人图床</title>
+      <link href="//2025/03/"/>
+      <url>//2025/03/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自网站搭建就一直使用着免费sky图床，导致25年的时候sky图床突然崩了，我大部分文章里的图片都找不到了，也给我一次惨痛的教训，现在被我修修补补的差不多了但也回不去以前的风光了，以此我想自己搭建个人图床省心点，好，废话不多说，我们开始吧！  </p><h1 id="要做的准备"><a href="#要做的准备" class="headerlink" title="要做的准备"></a>要做的准备</h1><p>1.PicGo，一个用于快速上传图片并获取图片 URL 链接的工具。<a href="https://github.com/Molunerfinn/PicGo/releases">下载好</a>。<br>2.<a href="https://www.qiniu.com/">七牛云</a>，注册好账号<br>3.一个域名。</p><h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><h2 id="1-七牛云对象存储配置"><a href="#1-七牛云对象存储配置" class="headerlink" title="1.七牛云对象存储配置"></a>1.七牛云对象存储配置</h2><p>七牛云给我们提供了10G的免费存储空间，这对个人网站来说，已经足够使用了。登陆账号，打开左上角的控制台旁边的三条杠，在这里我们会看到对象存储Kodo点击。<br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305165353463.png"><br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305165857188.png"><br>在对象存储，左侧点击空间管理，再点击创建空间，我这里创建过了。<br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305170500329.png">  </p><p>存储空间名称随自己命名，只要不要搞混就行，<strong>存储地区</strong>这里应为我是没有备案且网站部署在Vercel上，所以选择国外的地区，如果自己有备案的就选国内，访问控制选公开。就好了，最后点击确定。<br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305170934244.png"><br>点击后会跳出空间创建成功的提示并要你绑定自定义域名，这里就需要我们之前买的域名，点击绑定域名。    </p><p>加速域名就在买的域名前面添加名称，随自己。通信协议选择https，有证书就上传证书，没有就点击链接创建一个证书，使用场景选图片小文件，缓存配置选择自定义，在自定义里选使用推荐配置。点击创建。<br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305172003028.png"><br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305172508974.png"><br>要配置，所以我们要到域名服务商那里添加CNAME的记录。类型：CNAME,名称可以跟我一样可以自己定。点击保存，在七牛云验证成功就好了。<br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305172931308.png"><br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305173241668.png" alt="添加记录"><br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305173721837.png" alt="成功了的"><br>至此在七牛云的配置就完成了。接下来要到PicGo里配置。</p><h2 id="2-PicGo配置"><a href="#2-PicGo配置" class="headerlink" title="2.PicGo配置"></a>2.PicGo配置</h2><p>安装好PicGo，找到PicGo设置，拉到最底下把七牛云勾选上。然后再图床设置找到七牛云添加配置。这是我的配置页面，大家可以参考一下。<br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305174520872.png"><br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305175857177.png"><br>1.<strong>图床配置名</strong>: 就自己写一个，这个无所谓，没有要求。<br>2.<strong>设定AK</strong>: 这个再七牛云里，点击头像-&gt;密钥管理，复制下来就好了。<br>3.<strong>设定SK</strong>: 这个同上面是一样的地方。这里不多赘述。<br>4.<strong>设定Bucket</strong>: 是七牛云对象存储时空间管理创建的空间名称。<br>5.<strong>设定访问网址</strong>：七牛云绑定域名的名称，前面加个https:&#x2F;&#x2F;<br>6.<strong>设定存储区域</strong>： 我的区域再国外所以是as0<br>7.<strong>设定网址后缀</strong>： 这个不是必要的，想弄的可以弄。随自己。<br>8.<strong>设定存储路径</strong>： 也可以不设置，要是想设置就到七牛云的空间管理找到自己创建的空间，点击文件管理，点击创建目录。创建好后在PicGo里设置就好了。<br>全部弄好了就点击确定。等待设置成功信息。自己再找一张图上传测验一下，成功了。<br><img src="https://tuchuang.ethereal.ac.cn/picgo/20260305180549164.png">   </p><h1 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h1><p>这就是七牛云+PicGo搭建个人图床的教程。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 图床 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 图床 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>近况</title>
       <link href="//2025/09/29/"/>
       <url>//2025/09/29/</url>
@@ -491,7 +520,7 @@
       <link href="//2025/01/18/"/>
       <url>//2025/01/18/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info simple"><p>注意本Twikoo是在Vercel上部署，如果不是在Vercel上部署请另寻别处</p></div><p>一开始配置邮箱通知时，配置的服务商是QQ的，理由很简单，因为大家都是QQ邮箱来联系，谁知是我忽略了自己的Twikoo是在Vercel上部署的，而Vercel是国外网站的(被ban了)，所以这才想起来看Twikoo的文档和各种资料，最终邮箱通知成功配置好。我觉得也要分享一下以免大家踩坑而放弃。</p><ol><li><p>毕竟是在Vercel上部署的，当然也有它的一个原因。在Vercel中找到你部署Twikoo的项目并点击，找到Settings点击，找到Deployment Protection，看到第一个Vercel Authentication，把它设置为Disabled,并Save。<br><img src="https://s2.loli.net/2025/01/18/CXb9ghFjV6PoWsw.png" alt="屏幕截图 2025-01-18 140353.png"></p></li><li><p>这之后就没Vercel的事了，接下来就是配置邮箱。官方文档里说过 </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用Vercel部署的云函数，请配置国外的邮件服务商</span><br></pre></td></tr></table></figure><p>那就说明QQ、163…只要是国内的邮件就行不通，所以把目标集中在国外邮件服务商，我照着作者的文档的步骤来的，所以用<a href="https://www.zoho.com/">zoho邮件服务商</a>打开网站，先注册，好了之后就进入邮箱配置界面，这里前提是你要有自己的域名，填好之后就接着下一步，然后会有一个设置用户，名字随自己喜好，<img src="https://s2.loli.net/2025/01/18/pva934zg5NKALX8.png" alt=" 2025-01-18 132723.png">这就表示我的企业邮箱是<a href="mailto:&#101;&#116;&#104;&#x65;&#114;&#64;&#101;&#x74;&#x68;&#101;&#114;&#101;&#x61;&#x6c;&#x2e;&#97;&#x63;&#46;&#x63;&#110;">&#101;&#116;&#104;&#x65;&#114;&#64;&#101;&#x74;&#x68;&#101;&#114;&#101;&#x61;&#x6c;&#x2e;&#97;&#x63;&#46;&#x63;&#110;</a></p></li><li><p>然后就会有一个DNS解析，有两条记录，可以看我的(我买的是腾讯云的域名，解析自然也是腾讯云的)。<br><img src="https://s2.loli.net/2025/01/18/49ALreYPGWUTpRi.png" alt="屏幕截图 2025-01-18 145636.png"><br>腾讯云这边解析好后就到zoho这边看看成不成功。好了就到网站Twikoo这边配置</p></li><li><p>来到Twikoo评论那，点击”设置”,输入自己的密码，点击”配置管理”，点击”邮件通知”。接下来可以看我这里怎么填的<br><img src="https://s2.loli.net/2025/01/18/wJXdKmDcgo6T4Ca.png" alt="屏幕截图 2025-01-18 150655.png">SMTP_PASS这里你自己在zoho设置的密码。配置好就保存一下。</p></li><li><p>然后再邮件通知测试填你自己其他的邮箱，点击”发送测试邮箱”按钮如有出现以下字段就说明成功。<br><img src="https://s2.loli.net/2025/01/18/BSArF8cybolazTH.png" alt="屏幕截图 2025-01-18 151251.png"></p></li><li><p>最后再来检验一下：<br><img src="https://s2.loli.net/2025/01/18/3piY5D4BVq6AOJs.jpg" alt="_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&amp;MsgID=95760908948591797&amp;skey=@crypt_34b44638_a8645afd98eab4ac3a812ff5ae1d71b0&amp;mmweb_appid=wx_webfilehelper.jpg"></p></li></ol>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info simple"><p>注意本Twikoo是在Vercel上部署，如果不是在Vercel上部署请另寻别处</p></div><p>一开始配置邮箱通知时，配置的服务商是QQ的，理由很简单，因为大家都是QQ邮箱来联系，谁知是我忽略了自己的Twikoo是在Vercel上部署的，而Vercel是国外网站的(被ban了)，所以这才想起来看Twikoo的文档和各种资料，最终邮箱通知成功配置好。我觉得也要分享一下以免大家踩坑而放弃。</p><ol><li><p>毕竟是在Vercel上部署的，当然也有它的一个原因。在Vercel中找到你部署Twikoo的项目并点击，找到Settings点击，找到Deployment Protection，看到第一个Vercel Authentication，把它设置为Disabled,并Save。<br><img src="https://s2.loli.net/2025/01/18/CXb9ghFjV6PoWsw.png" alt="屏幕截图 2025-01-18 140353.png"></p></li><li><p>这之后就没Vercel的事了，接下来就是配置邮箱。官方文档里说过 </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用Vercel部署的云函数，请配置国外的邮件服务商</span><br></pre></td></tr></table></figure><p>那就说明QQ、163…只要是国内的邮件就行不通，所以把目标集中在国外邮件服务商，我照着作者的文档的步骤来的，所以用<a href="https://www.zoho.com/">zoho邮件服务商</a>打开网站，先注册，好了之后就进入邮箱配置界面，这里前提是你要有自己的域名，填好之后就接着下一步，然后会有一个设置用户，名字随自己喜好，<img src="https://s2.loli.net/2025/01/18/pva934zg5NKALX8.png" alt=" 2025-01-18 132723.png">这就表示我的企业邮箱是<a href="mailto:&#x65;&#116;&#104;&#x65;&#114;&#x40;&#101;&#116;&#x68;&#x65;&#114;&#101;&#x61;&#108;&#46;&#97;&#99;&#46;&#x63;&#x6e;">&#x65;&#116;&#104;&#x65;&#114;&#x40;&#101;&#116;&#x68;&#x65;&#114;&#101;&#x61;&#108;&#46;&#97;&#99;&#46;&#x63;&#x6e;</a></p></li><li><p>然后就会有一个DNS解析，有两条记录，可以看我的(我买的是腾讯云的域名，解析自然也是腾讯云的)。<br><img src="https://s2.loli.net/2025/01/18/49ALreYPGWUTpRi.png" alt="屏幕截图 2025-01-18 145636.png"><br>腾讯云这边解析好后就到zoho这边看看成不成功。好了就到网站Twikoo这边配置</p></li><li><p>来到Twikoo评论那，点击”设置”,输入自己的密码，点击”配置管理”，点击”邮件通知”。接下来可以看我这里怎么填的<br><img src="https://s2.loli.net/2025/01/18/wJXdKmDcgo6T4Ca.png" alt="屏幕截图 2025-01-18 150655.png">SMTP_PASS这里你自己在zoho设置的密码。配置好就保存一下。</p></li><li><p>然后再邮件通知测试填你自己其他的邮箱，点击”发送测试邮箱”按钮如有出现以下字段就说明成功。<br><img src="https://s2.loli.net/2025/01/18/BSArF8cybolazTH.png" alt="屏幕截图 2025-01-18 151251.png"></p></li><li><p>最后再来检验一下：<br><img src="https://s2.loli.net/2025/01/18/3piY5D4BVq6AOJs.jpg" alt="_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&amp;MsgID=95760908948591797&amp;skey=@crypt_34b44638_a8645afd98eab4ac3a812ff5ae1d71b0&amp;mmweb_appid=wx_webfilehelper.jpg"></p></li></ol>]]></content>
       
       
       <categories>
